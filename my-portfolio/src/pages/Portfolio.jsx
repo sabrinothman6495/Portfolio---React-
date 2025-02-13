@@ -8,10 +8,12 @@ const projects = [
 const Portfolio = () => {
   return (
     <section>
-      <h2>Portfolio</h2>
-      <div className="portfolio-grid">
+      <h1>Portfolio</h1>
+      <p>Check out some of my projects:</p>
+      <div>
         {projects.map((project, index) => <Project key={index} {...project} />)}
       </div>
+      <a href="github.com" target="_blank">View More on GitHub</a>
     </section>
   );
 };

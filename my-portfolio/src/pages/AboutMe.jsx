@@ -8,7 +8,8 @@ const AboutMe = () => {
         <h1>About Me</h1>
 
         <img src="/src/assets/profilepic.jpeg" alt="profile" />
-        <p>Welcome to my portfolio! I'm a web developer</p>
+        <p>Welcome to my React Portfolio project! I'm a web developer who has created this little project with react using simply the react frame work. </p>
+        <p> I enjoy learning, developing, trying diffrent foods and skateboarding</p>
       </div>
     );
   };
