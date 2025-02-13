@@ -1,4 +1,4 @@
-import Project from "../components/project";
+import Project from "../components/Project";
 
 const projects = [
   { title: "Project 1", image: "/images/project1.jpg", deployedLink: "#", githubLink: "#" },

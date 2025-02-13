@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/profilepic.jpeg";
-import "../CSS/AboutMe.css";
+import "../CSS/Aboutme.css";
+
 const AboutMe = () => {
     return (
       <div className="about-me-container">
