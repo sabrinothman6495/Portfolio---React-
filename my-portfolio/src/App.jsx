@@ -5,13 +5,19 @@ import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import LandingPage from "./pages/LandingPage";
+import Navigation from "./components/Navigation";
+
+import "./CSS/App.css";
 
 function App() {
   return (
     <Router>
+       <Navigation />
       <Header />
       <Routes>
-        <Route path="/" element={<AboutMe />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/about" element={<AboutMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />

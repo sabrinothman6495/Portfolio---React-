@@ -1,0 +1,10 @@
+.about-me-container {
+    text-align: center;
+  }
+  
+  .about-me-container img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
