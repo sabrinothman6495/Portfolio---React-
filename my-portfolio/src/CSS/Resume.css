@@ -1,56 +1,62 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 /* General Section Styling */
 .resume-section {
   max-width: 800px;
-  margin: 40px auto; /* Adds space from other sections */
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  padding: 30px;
+  background: #f3f4f6;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
 /* Resume Header */
 .resume-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .resume-header h1 {
-  font-size: 2.5rem; /* Slightly larger for prominence */
-  color: #222;
-  font-weight: bold;
+  font-size: 2.5rem;
+  color: #1f2937;
+  font-weight: 600;
 }
 
 .resume-header p {
-  font-size: 1.3rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #4b5563;
 }
 
 /* Resume Download Link */
 .resume-link {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 18px;
-  background-color: #007bff;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 10px rgba(0, 123, 255, 0.4);
 }
 
-.resume-link:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+.resume-link:hover, .resume-link:focus {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #0056b3, #004080);
+  box-shadow: 0 7px 15px rgba(0, 86, 179, 0.5);
 }
 
 /* Section Headings */
 h3 {
-  margin-top: 25px;
-  color: #333;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #007bff; /* Adds subtle emphasis */
-  padding-bottom: 5px;
+  margin-top: 30px;
+  color: #1f2937;
+  font-size: 1.6rem;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 /* Experience & Proficiencies Lists */
@@ -59,50 +65,81 @@ h3 {
 .education-list {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .proficiencies-list li {
   position: relative;
-  padding-left: 28px; /* Space for the checkmark */
+  padding-left: 35px;
+  margin-bottom: 12px;
   font-size: 18px;
-  margin-bottom: 10px;
   font-weight: 500;
 }
 
 /* Checkmark Styling */
 .proficiencies-list li::before {
-  content: "✔"; /* Checkmark symbol */
+  content: "✔";
   position: absolute;
   left: 0;
-  color: green;
-  font-size: 20px;
+  top: 3px;
+  color: #28a745;
+  font-size: 22px;
   font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Experience Items */
 .experience-item {
-  margin-bottom: 20px;
-  padding-left: 20px;
-  border-left: 3px solid #007bff; /* Adds a visual separation */
-  padding-top: 5px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  border-left: 5px solid #007bff;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateX(10px);
+  background-color: #d1d5db;
 }
 
 .experience-item h4 {
-  color: #444;
-  font-size: 1.2rem;
+  color: #374151;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
 .experience-item p {
+  color: #4b5563;
   font-size: 1rem;
-  color: #555;
   margin-top: 5px;
 }
 
 /* General Paragraph Styling */
 p {
-  color: #666;
-  font-size: 1rem;
   line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .resume-section {
+    padding: 20px;
+  }
+
+  .resume-header h1 {
+    font-size: 2rem;
+  }
+
+  .resume-header p {
+    font-size: 1rem;
+  }
+
+  .proficiencies-list li {
+    font-size: 16px;
+    padding-left: 28px;
+  }
+
+  .proficiencies-list li::before {
+    font-size: 18px;
+  }
 }
